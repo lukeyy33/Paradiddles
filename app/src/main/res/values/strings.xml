@@ -4,4 +4,5 @@
     <string name="nextBtn">next</string>
     <string name="previousBtn">previous</string>
     <string name="paradiddlesLbl">Paradiddles</string>
+    <string name="paradiddleView">mainImage</string>
 </resources>
