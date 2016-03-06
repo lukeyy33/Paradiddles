@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Paradiddles</string>
     <string name="action_settings">Settings</string>
+    <string name="nextBtn">next</string>
+    <string name="previousBtn">previous</string>
+    <string name="paradiddlesLbl">Paradiddles</string>
 </resources>
