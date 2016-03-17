@@ -15,4 +15,11 @@
     <string name="flamsString">Flams</string>
     <string name="dragsString">Drags</string>
     <string name="rollsString">Rolls</string>
+
+    <string name="title_activity_singles">SinglesActivity</string>
+    <string name="title_activity_doubles">DoublesActivity</string>
+    <string name="title_activity_drags">DragsActivity</string>
+    <string name="title_activity_flams">FlamsActivity</string>
+    <string name="title_activity_rolls">RollActivity</string>
+    <string name="title_activity_triplets">TripletsActivity</string>
 </resources>

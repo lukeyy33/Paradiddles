@@ -29,40 +29,13 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/previousBtn"
-        android:id="@+id/previousBtn"
-        android:background="#60abfb"
-        android:typeface="sans"
-        android:textStyle="bold|italic"
-        android:layout_alignTop="@+id/nextBtn"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/nextBtn"
-        android:id="@+id/nextBtn"
-        android:background="#FF60ABFB"
-        android:clickable="true"
-        android:capitalize="none"
-        android:elegantTextHeight="false"
-        android:enabled="true"
-        android:typeface="sans"
-        android:textStyle="bold|italic"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/singlesString"
         android:id="@+id/btnSingles"
         android:layout_marginTop="50dp"
         android:layout_below="@+id/paradiddlesLbl"
         android:layout_toLeftOf="@+id/paradiddlesLbl"
-        android:layout_toStartOf="@+id/paradiddlesLbl" />
+        android:layout_toStartOf="@+id/paradiddlesLbl"
+        android:textColor="#FF60ABFB" />
 
     <Button
         android:layout_width="wrap_content"
@@ -71,7 +44,8 @@
         android:id="@+id/btnTriplets"
         android:layout_alignTop="@+id/btnSingles"
         android:layout_toRightOf="@+id/paradiddlesLbl"
-        android:layout_toEndOf="@+id/paradiddlesLbl" />
+        android:layout_toEndOf="@+id/paradiddlesLbl"
+        android:textColor="#FF60ABFB" />
 
     <Button
         android:layout_width="wrap_content"
@@ -79,7 +53,8 @@
         android:text="@string/doublesString"
         android:id="@+id/btnDoubles"
         android:layout_alignTop="@+id/btnTriplets"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textColor="#FF60ABFB" />
 
     <Button
         android:layout_width="wrap_content"
@@ -88,7 +63,8 @@
         android:id="@+id/btnFlams"
         android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/btnSingles"
-        android:layout_alignStart="@+id/btnSingles" />
+        android:layout_alignStart="@+id/btnSingles"
+        android:textColor="#FF60ABFB" />
 
     <Button
         android:layout_width="wrap_content"
@@ -97,7 +73,8 @@
         android:id="@+id/btnDrags"
         android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/btnDoubles"
-        android:layout_alignStart="@+id/btnDoubles" />
+        android:layout_alignStart="@+id/btnDoubles"
+        android:textColor="#FF60ABFB" />
 
     <Button
         android:layout_width="wrap_content"
@@ -106,7 +83,8 @@
         android:id="@+id/btnRolls"
         android:layout_alignTop="@+id/btnDrags"
         android:layout_alignLeft="@+id/btnTriplets"
-        android:layout_alignStart="@+id/btnTriplets" />
+        android:layout_alignStart="@+id/btnTriplets"
+        android:textColor="#FF60ABFB" />
 
 
 </RelativeLayout>

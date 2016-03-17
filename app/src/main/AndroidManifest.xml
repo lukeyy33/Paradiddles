@@ -34,9 +34,33 @@
             android:value="@integer/google_play_services_version" />
 
         <activity
-            android:name=".DrawerActivity"
-            android:label="@string/title_activity_drawer"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:name=".SinglesActivity"
+            android:label="@string/title_activity_singles"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".DoublesActivity"
+            android:label="@string/title_activity_doubles"
+            android:theme="@style/AppTheme.NoActionBar">
+            </activity>
+        <activity android:name=".TripletsActivity"
+            android:label="@string/title_activity_doubles"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".DragsActivity"
+            android:label="@string/title_activity_doubles"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".RollsActivity"
+            android:label="@string/title_activity_doubles"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".FlamsActivity"
+            android:label="@string/title_activity_flams"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+
+
     </application>
 
 </manifest>
