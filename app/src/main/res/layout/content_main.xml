@@ -57,7 +57,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Singles"
+        android:text="@string/singlesString"
         android:id="@+id/btnSingles"
         android:layout_marginTop="50dp"
         android:layout_below="@+id/paradiddlesLbl"
@@ -67,7 +67,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Triplets"
+        android:text="@string/tripletsString"
         android:id="@+id/btnTriplets"
         android:layout_alignTop="@+id/btnSingles"
         android:layout_toRightOf="@+id/paradiddlesLbl"
@@ -76,7 +76,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Doubles"
+        android:text="@string/doublesString"
         android:id="@+id/btnDoubles"
         android:layout_alignTop="@+id/btnTriplets"
         android:layout_centerHorizontal="true" />
@@ -84,29 +84,29 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Flams"
+        android:text="@string/flamsString"
         android:id="@+id/btnFlams"
-        android:layout_below="@+id/btnSingles"
+        android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/btnSingles"
-        android:layout_alignStart="@+id/btnSingles"
-        android:layout_marginTop="45dp" />
+        android:layout_alignStart="@+id/btnSingles" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Drags"
+        android:text="@string/dragsString"
         android:id="@+id/btnDrags"
-        android:layout_alignTop="@+id/btnFlams"
+        android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/btnDoubles"
         android:layout_alignStart="@+id/btnDoubles" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Rolls"
+        android:text="@string/rollsString"
         android:id="@+id/btnRolls"
         android:layout_alignTop="@+id/btnDrags"
         android:layout_alignLeft="@+id/btnTriplets"
         android:layout_alignStart="@+id/btnTriplets" />
+
 
 </RelativeLayout>

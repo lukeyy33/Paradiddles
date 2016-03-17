@@ -5,4 +5,14 @@
     <string name="previousBtn">previous</string>
     <string name="paradiddlesLbl">Paradiddles</string>
     <string name="paradiddleView">mainImage</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="singlesString">Singles</string>
+    <string name="tripletsString">Triplets</string>
+    <string name="doublesString">Doubles</string>
+    <string name="flamsString">Flams</string>
+    <string name="dragsString">Drags</string>
+    <string name="rollsString">Rolls</string>
 </resources>
