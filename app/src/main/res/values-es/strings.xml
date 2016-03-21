@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Paradiddles</string>
+    <string name="navigation_drawer_close"> Cerrar panel lateral de navegación</string>
+    <string name="navigation_drawer_open">Abrir panel lateral de navegación</string>
+    <string name="HomeButton">Casa</string>
+    <string name="doublesActivityTitle">Actividad de dobles</string>
+    <string name="doublesButton">Botón de dobles</string>
+    <string name="dragsActivityTitle"> Actividad de arrastre</string>
+    <string name="dragsButton">Botón de arrastre  </string>
+    <string name="drawerActivityTitle">Cajón Título de la actividad</string>
+    <string name="rollsActivityTitle">Rollo de Actividad</string>
+    <string name="flamsActivityTitle">Título de la actividad Mentira</string>
+    <string name="flamsButton">Buttón de Mentira</string>
+    <string name="mainActivityTitle">Actividad principal</string>
+    <string name="rollsButton">Buttón rollo</string>
+    <string name="singlesActivityTitle">Actividad individual</string>
+    <string name="singlesButton">Un solo botón</string>
+</resources>
