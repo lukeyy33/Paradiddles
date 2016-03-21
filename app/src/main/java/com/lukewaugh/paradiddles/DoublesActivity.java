@@ -26,7 +26,7 @@ public class DoublesActivity extends AppCompatActivity {
                 finish();
             }
         });
-        viewPager = (ViewPager)findViewById(R.id.view_pager);
+        viewPager = (ViewPager)findViewById(R.id.viewPager);
         doubleSwipeAdapter = new DoubleSwipeAdapter(this);
         viewPager.setAdapter(doubleSwipeAdapter);
 

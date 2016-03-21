@@ -8,11 +8,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-public class DragSwipeAdapter extends PagerAdapter {
-    private int [] drags = {R.drawable.test, R.drawable.triplets};
+class DragSwipeAdapter extends PagerAdapter {
+    private final int [] drags = {R.drawable.test, R.drawable.triplets};
+    private final Context context;
 
-    private Context context;
-    private LayoutInflater layoutInflater;
 
     public DragSwipeAdapter(Context context) {
         this.context = context;
@@ -30,14 +29,15 @@ public class DragSwipeAdapter extends PagerAdapter {
 
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
-        layoutInflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View item_view  = layoutInflater.inflate(R.layout.swipe_layout,container,false);
-        ImageView imageView = (ImageView)item_view.findViewById(R.id.image_view);
+        LayoutInflater layoutInflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View itemView  = layoutInflater.inflate(R.layout.swipe_layout,container,false);
+        ImageView imageView = (ImageView)itemView.findViewById(R.id.SwipeImageView);
 
         imageView.setImageResource(drags[position]);
-        container.addView(item_view);
 
-        return item_view;
+        container.addView(itemView);
+
+        return itemView;
     }
 
     @Override

@@ -8,11 +8,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-public class DoubleSwipeAdapter extends PagerAdapter {
-    private int [] doubles = {R.drawable.test, R.drawable.triplets};
-
+class DoubleSwipeAdapter extends PagerAdapter {
+    private int [] doubles = {R.drawable.splash, R.drawable.triplets};
     private Context context;
-    private LayoutInflater layoutInflater;
+
 
     public DoubleSwipeAdapter(Context context) {
         this.context = context;
@@ -30,14 +29,14 @@ public class DoubleSwipeAdapter extends PagerAdapter {
 
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
-        layoutInflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View item_view  = layoutInflater.inflate(R.layout.swipe_layout,container,false);
-        ImageView imageView = (ImageView)item_view.findViewById(R.id.image_view);
+        LayoutInflater layoutInflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View itemView  = layoutInflater.inflate(R.layout.swipe_layout,container,false);
+        ImageView imageView = (ImageView)itemView.findViewById(R.id.SwipeImageView);
 
         imageView.setImageResource(doubles[position]);
-        container.addView(item_view);
+        container.addView(itemView);
 
-        return item_view;
+        return itemView;
     }
 
     @Override

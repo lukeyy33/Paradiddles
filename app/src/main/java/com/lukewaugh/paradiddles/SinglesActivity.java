@@ -8,8 +8,6 @@ import android.view.View;
 import android.widget.Button;
 
 public class SinglesActivity extends AppCompatActivity {
-    ViewPager viewPager;
-    SingleSwipeAdapter singleSwipeAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,8 +24,8 @@ public class SinglesActivity extends AppCompatActivity {
                 finish();
             }
         });
-        viewPager = (ViewPager)findViewById(R.id.view_pager);
-        singleSwipeAdapter = new SingleSwipeAdapter(this);
+        ViewPager viewPager = (ViewPager) findViewById(R.id.viewPager);
+        SingleSwipeAdapter singleSwipeAdapter = new SingleSwipeAdapter(this);
         viewPager.setAdapter(singleSwipeAdapter);
 
     }

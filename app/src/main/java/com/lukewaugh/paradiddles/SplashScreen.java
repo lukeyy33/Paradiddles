@@ -1,5 +1,6 @@
 package com.lukewaugh.paradiddles;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -15,8 +16,9 @@ public class SplashScreen extends AppCompatActivity {
         //Set view to relative xml
         setContentView(R.layout.splash);
 
-        final ImageView imageView = (ImageView) findViewById(R.id.imageView);
+        final ImageView imageView = (ImageView) findViewById(R.id.splashImageView);
         final Animation animation = AnimationUtils.loadAnimation(getBaseContext(), R.anim.rotate);
+        @SuppressLint("PrivateResource")
         final Animation animation2 = AnimationUtils.loadAnimation(getBaseContext(), R.anim.abc_fade_out);
 
         imageView.startAnimation(animation);

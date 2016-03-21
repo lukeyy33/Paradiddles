@@ -10,12 +10,11 @@ import android.widget.LinearLayout;
 
 
 
-public class SingleSwipeAdapter extends PagerAdapter {
-    private int [] singles = {R.drawable.test, R.drawable.triplets};
+class SingleSwipeAdapter extends PagerAdapter {
+    private final int [] singles = {R.drawable.test, R.drawable.triplets};
 
 
-    private Context context;
-    private LayoutInflater layoutInflater;
+    private final Context context;
 
     public SingleSwipeAdapter(Context context) {
         this.context = context;
@@ -33,14 +32,15 @@ public class SingleSwipeAdapter extends PagerAdapter {
 
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
-        layoutInflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View item_view  = layoutInflater.inflate(R.layout.swipe_layout,container,false);
-        ImageView imageView = (ImageView)item_view.findViewById(R.id.image_view);
+        LayoutInflater layoutInflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View itemView  = layoutInflater.inflate(R.layout.swipe_layout,container,false);
+        ImageView imageView = (ImageView)itemView.findViewById(R.id.SwipeImageView);
 
         imageView.setImageResource(singles[position]);
-        container.addView(item_view);
 
-        return item_view;
+        container.addView(itemView);
+
+        return itemView;
     }
 
     @Override

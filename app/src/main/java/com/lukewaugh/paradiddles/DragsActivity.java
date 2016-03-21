@@ -9,8 +9,6 @@ import android.widget.Button;
 
 
 public class DragsActivity extends AppCompatActivity {
-    ViewPager viewPager;
-    DragSwipeAdapter dragSwipeAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +25,8 @@ public class DragsActivity extends AppCompatActivity {
                 finish();
             }
         });
-        viewPager = (ViewPager)findViewById(R.id.view_pager);
-        dragSwipeAdapter = new DragSwipeAdapter(this);
+        ViewPager viewPager = (ViewPager) findViewById(R.id.viewPager);
+        DragSwipeAdapter dragSwipeAdapter = new DragSwipeAdapter(this);
         viewPager.setAdapter(dragSwipeAdapter);
 
     }

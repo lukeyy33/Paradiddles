@@ -2,23 +2,31 @@ package com.lukewaugh.paradiddles;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.PersistableBundle;
-import android.support.v4.view.ViewPager;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
-import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ViewFlipper;
+import android.widget.ListView;
+
 
 public class MainActivity extends AppCompatActivity {
+    private DrawerLayout drawerLayout;
+    private ListView listView;
+    private String[] drawerItems;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
+        listView = (ListView) findViewById(R.id.drawerList);
+        drawerItems = getResources().getStringArray(R.array.navDrawerItems);
+
+        listView.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, drawerItems));
+
+
 
         Button singlesBtn  = (Button) findViewById(R.id.btnSingles);
         singlesBtn.setOnClickListener(new View.OnClickListener() {

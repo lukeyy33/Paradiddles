@@ -8,8 +8,6 @@ import android.view.View;
 import android.widget.Button;
 
 public class RollsActivity extends AppCompatActivity {
-    ViewPager viewPager;
-    RollsSwipeAdapter rollsSwipeAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,8 +24,8 @@ public class RollsActivity extends AppCompatActivity {
                 finish();
             }
         });
-        viewPager = (ViewPager)findViewById(R.id.view_pager);
-        rollsSwipeAdapter = new RollsSwipeAdapter(this);
+        ViewPager viewPager = (ViewPager) findViewById(R.id.viewPager);
+        RollsSwipeAdapter rollsSwipeAdapter = new RollsSwipeAdapter(this);
         viewPager.setAdapter(rollsSwipeAdapter);
 
     }

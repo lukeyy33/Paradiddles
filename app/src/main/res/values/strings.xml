@@ -1,25 +1,79 @@
 <resources>
+    <!-- STRINGS -->
+    <!-- App Name -->
     <string name="app_name">Paradiddles</string>
-    <string name="action_settings">Settings</string>
-    <string name="nextBtn">next</string>
-    <string name="previousBtn">previous</string>
-    <string name="paradiddlesLbl">Paradiddles</string>
-    <string name="paradiddleView">mainImage</string>
-    <string name="title_activity_drawer">DrawerActivity</string>
-
+    <!-- Splash Screen -->
+    <string name="splashScreen">Loading Screen</string>
+    <!-- Buttons -->
+    <string name="singlesButton">Singles</string>
+    <string name="tripletsButton">Triplets</string>
+    <string name="doublesButton">Doubles</string>
+    <string name="flamsButton">Flams</string>
+    <string name="dragsButton">Drags</string>
+    <string name="rollsButton">Rolls</string>
+    <string name="HomeButton">Home</string>
+    <!-- Swipe Layout File Image View -->
+    <string name="swipeLayoutImageView">Swipe Layout Image View</string>
+    <!--Activity Titles -->
+    <string name="singlesActivityTitle">Singles Activity</string>
+    <string name="doublesActivityTitle">Doubles Activity</string>
+    <string name="dragsActivityTitle">Drags Activity</string>
+    <string name="flamsActivityTitle">Flams Activity</string>
+    <string name="rollsActivityTitle">Roll Activity</string>
+    <string name="drawerActivityTitle">Drawer Activity</string>
+    <string name="triplesActivityTitle">Triplets Activity</string>
+    <string name="mainActivityTitle">Paradiddles!</string>
+    <!-- Navigation Drawer Popups -->
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="singlesString">Singles</string>
-    <string name="tripletsString">Triplets</string>
-    <string name="doublesString">Doubles</string>
-    <string name="flamsString">Flams</string>
-    <string name="dragsString">Drags</string>
-    <string name="rollsString">Rolls</string>
+    <!--Navigation Drawer Items -->
+    <string-array name ="navDrawerItems">
+        <item>Home</item>
+        <item>Account</item>
+        <item>Settings</item>
+    </string-array>
 
-    <string name="title_activity_singles">SinglesActivity</string>
-    <string name="title_activity_doubles">DoublesActivity</string>
-    <string name="title_activity_drags">DragsActivity</string>
-    <string name="title_activity_flams">FlamsActivity</string>
-    <string name="title_activity_rolls">RollActivity</string>
-    <string name="title_activity_triplets">TripletsActivity</string>
+
+
+
+
+
+    <!-- CONTENT DESCRIPTIONS -->
+    <string name="swipeLayoutDescription">Swipe across for the next image</string>
+    <string name="app_nameDescription">Title Paradiddles</string>
+    <!-- Splash Screen -->
+    <string name="splashScreenDescription">The loading Screen</string>
+    <!-- Buttons -->
+    <string name="singlesButtonDescription">A button to go to the Singles Exercises</string>
+    <string name="tripletsButtonDescription">A button to go to the Triplets Exercises</string>
+    <string name="doublesButtonDescription">A button to go to the Doubles Exercises</string>
+    <string name="flamsButtonDescription">A button to go to the Flams Exercises</string>
+    <string name="dragsButtonDescription">A button to go to the Drags Exercises</string>
+    <string name="rollsButtonDescription">A button to go to the Rolls Exercises</string>
+    <string name="HomeButtonDescription">A button to go to the Home screen </string>
+    <!-- Swipe Layout File Image View -->
+    <string name="swipeLayoutImageViewDescription">Swipe left For the next Image, or right for the previous</string>
+
+    <!--Activity Titles -->
+    <string name="singlesActivityTitleDescription">You are on the Singles page</string>
+    <string name="doublesActivityTitleDescription">You are on the Doubles page</string>
+    <string name="dragsActivityTitleDescription">You are on the Drags page</string>
+    <string name="flamsActivityTitleDescription">You are on the Flams page</string>
+    <string name="rollsActivityTitleDescription">You are on the Rolls page</string>
+    <string name="drawerActivityTitleDescription">Open the Navigation Drawer</string>
+    <string name="triplesActivityTitleDescription">You are on the Triplets page</string>
+    <string name="mainActivityTitleDescription">You are on the Home Screen </string>
+    <!-- Navigation Drawer Popups -->
+    <string name="navigation_drawer_openDescription">Open navigation drawer</string>
+    <string name="navigation_drawer_closeDescription">Close navigation drawer</string>
+    <!--Navigation Drawer Items -->
+    <string-array name ="navDrawerItemsDescription">
+        <item>Home</item>
+        <item>Account</item>
+        <item>Settings</item>
+    </string-array>
+    <string name="drawerListItemsContent">Drawer List Menu Items</string>
+    <string name="drawerFrameLayoutDescription">TEST THIS HOMO</string>
+
+
 </resources>

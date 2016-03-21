@@ -8,8 +8,6 @@ import android.view.View;
 import android.widget.Button;
 
 public class FlamsActivity extends AppCompatActivity {
-    ViewPager viewPager;
-    FlamsSwipeAdapter flamsSwipeAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,8 +24,8 @@ public class FlamsActivity extends AppCompatActivity {
                 finish();
             }
         });
-        viewPager = (ViewPager)findViewById(R.id.view_pager);
-        flamsSwipeAdapter = new FlamsSwipeAdapter(this);
+        ViewPager viewPager = (ViewPager) findViewById(R.id.viewPager);
+        FlamsSwipeAdapter flamsSwipeAdapter = new FlamsSwipeAdapter(this);
         viewPager.setAdapter(flamsSwipeAdapter);
 
     }

@@ -11,80 +11,97 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.lukewaugh.paradiddles.MainActivity"
-    tools:showIn="@layout/activity_main">
+    tools:showIn="@layout/activity_main"
+    >
 
+    <!-- Title
+         ID paradiddlesLbl -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/paradiddlesLbl"
+        android:text="@string/mainActivityTitle"
         android:id="@+id/paradiddlesLbl"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:textStyle="bold"
-        android:textColor="#FF60ABFB"
+        android:textColor="@color/colorPrimary"
         android:shadowColor="#000000"
         android:singleLine="false"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:clickable="false"
+        android:contentDescription="@string/app_nameDescription"/>
 
+    <!-- ID btnSingles -->
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/singlesString"
+        android:text="@string/singlesButton"
         android:id="@+id/btnSingles"
         android:layout_marginTop="50dp"
         android:layout_below="@+id/paradiddlesLbl"
         android:layout_toLeftOf="@+id/paradiddlesLbl"
         android:layout_toStartOf="@+id/paradiddlesLbl"
-        android:textColor="#FF60ABFB" />
+        android:textColor="@color/colorPrimary"
+        android:contentDescription="@string/singlesButtonDescription"/>
 
+    <!-- ID btnTriplets -->
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/tripletsString"
+        android:text="@string/tripletsButton"
         android:id="@+id/btnTriplets"
         android:layout_alignTop="@+id/btnSingles"
         android:layout_toRightOf="@+id/paradiddlesLbl"
         android:layout_toEndOf="@+id/paradiddlesLbl"
-        android:textColor="#FF60ABFB" />
+        android:textColor="@color/colorPrimary"
+        android:contentDescription="@string/tripletsButton"/>
 
+    <!-- ID btnDoubles -->
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/doublesString"
+        android:text="@string/doublesButton"
         android:id="@+id/btnDoubles"
         android:layout_alignTop="@+id/btnTriplets"
         android:layout_centerHorizontal="true"
-        android:textColor="#FF60ABFB" />
+        android:textColor="@color/colorPrimary"
+        android:contentDescription="@string/doublesButtonDescription"/>
 
+    <!-- ID btnFlams -->
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/flamsString"
+        android:text="@string/flamsButton"
         android:id="@+id/btnFlams"
         android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/btnSingles"
         android:layout_alignStart="@+id/btnSingles"
-        android:textColor="#FF60ABFB" />
+        android:textColor="@color/colorPrimary"
+        android:contentDescription="@string/flamsButtonDescription"/>
 
+    <!-- ID btnDrags -->
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/dragsString"
+        android:text="@string/dragsButton"
         android:id="@+id/btnDrags"
         android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/btnDoubles"
         android:layout_alignStart="@+id/btnDoubles"
-        android:textColor="#FF60ABFB" />
-
+        android:textColor="@color/colorPrimary"
+        android:contentDescription="@string/dragsButtonDescription"/>
+    <!-- ID btnRolls -->
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/rollsString"
+        android:text="@string/rollsButton"
         android:id="@+id/btnRolls"
         android:layout_alignTop="@+id/btnDrags"
         android:layout_alignLeft="@+id/btnTriplets"
         android:layout_alignStart="@+id/btnTriplets"
-        android:textColor="#FF60ABFB" />
+        android:textColor="@color/colorPrimary"
+        android:contentDescription="@string/rollsButtonDescription"/>
+
 
 
 </RelativeLayout>

@@ -8,8 +8,6 @@ import android.view.View;
 import android.widget.Button;
 
 public class TripletsActivity extends AppCompatActivity {
-    ViewPager viewPager;
-    TripletsSwipeAdapter tripletsSwipeAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,8 +24,8 @@ public class TripletsActivity extends AppCompatActivity {
                 finish();
             }
         });
-        viewPager = (ViewPager)findViewById(R.id.view_pager);
-        tripletsSwipeAdapter = new TripletsSwipeAdapter(this);
+        ViewPager viewPager = (ViewPager) findViewById(R.id.viewPager);
+        TripletsSwipeAdapter tripletsSwipeAdapter = new TripletsSwipeAdapter(this);
         viewPager.setAdapter(tripletsSwipeAdapter);
 
     }

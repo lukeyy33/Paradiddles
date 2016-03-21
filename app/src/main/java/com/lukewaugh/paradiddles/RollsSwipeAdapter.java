@@ -10,12 +10,9 @@ import android.widget.LinearLayout;
 
 
 
-public class RollsSwipeAdapter extends PagerAdapter {
-    private int [] rolls = {R.drawable.test, R.drawable.triplets};
-
-
-    private Context context;
-    private LayoutInflater layoutInflater;
+class RollsSwipeAdapter extends PagerAdapter {
+    private final int [] rolls = {R.drawable.test, R.drawable.triplets};
+    private final Context context;
 
     public RollsSwipeAdapter(Context context) {
         this.context = context;
@@ -33,14 +30,15 @@ public class RollsSwipeAdapter extends PagerAdapter {
 
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
-        layoutInflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View item_view  = layoutInflater.inflate(R.layout.swipe_layout,container,false);
-        ImageView imageView = (ImageView)item_view.findViewById(R.id.image_view);
+        LayoutInflater layoutInflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View itemView  = layoutInflater.inflate(R.layout.swipe_layout,container,false);
+        ImageView imageView = (ImageView)itemView.findViewById(R.id.SwipeImageView);
 
         imageView.setImageResource(rolls[position]);
-        container.addView(item_view);
 
-        return item_view;
+        container.addView(itemView);
+
+        return itemView;
     }
 
     @Override
