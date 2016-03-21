@@ -2,31 +2,58 @@ package com.lukewaugh.paradiddles;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.PersistableBundle;
+import android.support.design.widget.NavigationView;
+import android.support.v4.view.GravityCompat;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ListView;
 
 
-public class MainActivity extends AppCompatActivity {
-    private DrawerLayout drawerLayout;
-    private ListView listView;
-    private String[] drawerItems;
+
+
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+    //private String[] drawerItems;
+    //private ListView listView;
+    //private DrawerLayout drawerLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
-        listView = (ListView) findViewById(R.id.drawerList);
-        drawerItems = getResources().getStringArray(R.array.navDrawerItems);
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(myToolbar);
 
-        listView.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, drawerItems));
+//        listView = (ListView) findViewById(R.id.drawerList);
+//        drawerItems = getResources().getStringArray(R.array.navDrawerItems);
+
+        //listView.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, drawerItems));
+        //listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                Toast.makeText(MainActivity.this, drawerItems[position] + " was selected", Toast.LENGTH_LONG).show();
+//                selectItem(position);
+//            }
+//
+//            public void selectItem(int position) {
+//                listView.setItemChecked(position, true);
+//            }
+//        });
 
 
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawerLayout);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+                this, drawer, myToolbar, R.string.navigationDrawerOpen, R.string.navigationDrawerClose);
+        drawer.setDrawerListener(toggle);
+        toggle.syncState();
+
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
 
         Button singlesBtn  = (Button) findViewById(R.id.btnSingles);
         singlesBtn.setOnClickListener(new View.OnClickListener() {
@@ -80,5 +107,35 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+    @Override
+    public void onBackPressed() {
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawerLayout);
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }
+    }
 
+
+
+    @Override
+    public boolean onNavigationItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.settings) {
+            Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+            startActivity(intent);
+        } else if (id == R.id.account) {
+            Intent intent = new Intent(MainActivity.this, AccountActivity.class);
+            startActivity(intent);
+        } else if (id == R.id.home) {
+            Intent intent = new Intent(MainActivity.this, MainActivity.class);
+            startActivity(intent);
+        }
+
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawerLayout);
+        drawer.closeDrawer(GravityCompat.START);
+        return true;
+    }
 }

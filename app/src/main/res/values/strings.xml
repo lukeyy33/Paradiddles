@@ -24,14 +24,13 @@
     <string name="triplesActivityTitle">Triplets Activity</string>
     <string name="mainActivityTitle">Paradiddles!</string>
     <!-- Navigation Drawer Popups -->
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigationDrawerOpen">Open navigation drawer</string>
+    <string name="navigationDrawerClose">Close navigation drawer</string>
     <!--Navigation Drawer Items -->
-    <string-array name ="navDrawerItems">
-        <item>Home</item>
-        <item>Account</item>
-        <item>Settings</item>
-    </string-array>
+    <string name ="navDrawerHome">Home</string>
+    <string name="navDrawerAccount">Account</string>
+    <string name="navDrawerSettings">Settings</string>
+
 
 
 

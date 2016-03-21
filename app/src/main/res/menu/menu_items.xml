@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:title="@string/navDrawerHome" />
+        <item
+            android:id="@+id/account"
+            android:title="@string/navDrawerAccount" />
+        <item
+            android:id="@+id/settings"
+            android:title="@string/navDrawerSettings" />
+        <!--android:icon="@drawable/ic_menu_camera"-->
+    </group>
+</menu>
