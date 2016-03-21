@@ -2,7 +2,6 @@ package com.lukewaugh.paradiddles;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -13,13 +12,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-
-
-
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
-    //private String[] drawerItems;
-    //private ListView listView;
-    //private DrawerLayout drawerLayout;
+public class MainActivity extends AppCompatActivity implements
+        NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,22 +22,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         Toolbar myToolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(myToolbar);
-
-//        listView = (ListView) findViewById(R.id.drawerList);
-//        drawerItems = getResources().getStringArray(R.array.navDrawerItems);
-
-        //listView.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, drawerItems));
-        //listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//                Toast.makeText(MainActivity.this, drawerItems[position] + " was selected", Toast.LENGTH_LONG).show();
-//                selectItem(position);
-//            }
-//
-//            public void selectItem(int position) {
-//                listView.setItemChecked(position, true);
-//            }
-//        });
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawerLayout);
@@ -127,7 +105,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
             startActivity(intent);
         } else if (id == R.id.account) {
-            Intent intent = new Intent(MainActivity.this, AccountActivity.class);
+            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
             startActivity(intent);
         } else if (id == R.id.home) {
             Intent intent = new Intent(MainActivity.this, MainActivity.class);

@@ -27,14 +27,9 @@
     <string name="navigationDrawerOpen">Open navigation drawer</string>
     <string name="navigationDrawerClose">Close navigation drawer</string>
     <!--Navigation Drawer Items -->
-    <string name ="navDrawerHome">Home</string>
+    <string name="navDrawerHome">Home</string>
     <string name="navDrawerAccount">Account</string>
     <string name="navDrawerSettings">Settings</string>
-
-
-
-
-
 
 
     <!-- CONTENT DESCRIPTIONS -->
@@ -66,13 +61,27 @@
     <string name="navigation_drawer_openDescription">Open navigation drawer</string>
     <string name="navigation_drawer_closeDescription">Close navigation drawer</string>
     <!--Navigation Drawer Items -->
-    <string-array name ="navDrawerItemsDescription">
+    <string-array name="navDrawerItemsDescription">
         <item>Home</item>
         <item>Account</item>
         <item>Settings</item>
     </string-array>
     <string name="drawerListItemsContent">Drawer List Menu Items</string>
     <string name="drawerFrameLayoutDescription">TEST THIS HOMO</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
 
 
 </resources>
