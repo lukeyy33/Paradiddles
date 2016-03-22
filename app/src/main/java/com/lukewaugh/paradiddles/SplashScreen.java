@@ -32,7 +32,7 @@ public class SplashScreen extends AppCompatActivity {
             public void onAnimationEnd(Animation animation) {
                 imageView.startAnimation(animation2);
                 finish();
-                Intent i = new Intent(SplashScreen.this.getBaseContext(),MainActivity.class);
+                Intent i = new Intent(SplashScreen.this.getBaseContext(),LoginActivity.class);
                 startActivity(i);
             }
 

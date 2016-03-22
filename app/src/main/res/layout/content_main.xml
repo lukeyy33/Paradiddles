@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,17 +10,15 @@
     android:id="@+id/drawerLayout"
     tools:openDrawer="start">
 
-    <!-- Frame Layout -->
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/mainDrawerContent"
-        android:contentDescription="@string/drawerFrameLayoutDescription"
         android:layout_below="@+id/paradiddlesLbl"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
-
-
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/navBarContentDescription">
 
         <!-- ID btnDrags -->
         <Button
@@ -88,8 +87,7 @@
             android:layout_toStartOf="@+id/paradiddlesLbl"
             android:textColor="@color/colorPrimary"
             android:contentDescription="@string/singlesButtonDescription"/>
-        <!-- Title
-            ID paradiddlesLbl -->
+        <!-- ID paradiddlesLbl -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -107,7 +105,8 @@
         <android.support.design.widget.AppBarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme"
+            android:contentDescription="@string/appBarLayoutContent">
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
@@ -134,7 +133,7 @@
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/menu_items"
-        />
+        android:clickable="true" />
 </android.support.v4.widget.DrawerLayout>
 
 

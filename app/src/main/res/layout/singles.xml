@@ -13,20 +13,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/mainDrawerContent"
-        android:contentDescription="@string/drawerFrameLayoutDescription"
         android:layout_below="@+id/paradiddlesLbl"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/singlesActivityTitle"
-        android:id="@+id/flamsActivityTitle"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textColor="@color/colorPrimary"
-        android:contentDescription="@string/singlesActivityTitleDescription"/>
+
 
 
 

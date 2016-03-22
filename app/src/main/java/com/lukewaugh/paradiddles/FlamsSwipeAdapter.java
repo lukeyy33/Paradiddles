@@ -11,7 +11,7 @@ import android.widget.LinearLayout;
 
 
 class FlamsSwipeAdapter extends PagerAdapter {
-    private final int [] flams = {R.drawable.test, R.drawable.triplets};
+    private final int [] flams = {R.drawable.triplets};
     private final Context context;
 
 

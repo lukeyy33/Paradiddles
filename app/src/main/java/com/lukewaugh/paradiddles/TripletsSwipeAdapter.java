@@ -10,7 +10,7 @@ import android.widget.LinearLayout;
 
 
 class TripletsSwipeAdapter extends PagerAdapter {
-    private final int [] triplets = {R.drawable.test, R.drawable.triplets};
+    private final int [] triplets = {R.drawable.triplets};
 
     private final Context context;
 

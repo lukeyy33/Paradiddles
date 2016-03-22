@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Paradiddles</string>
-    <string name="navigation_drawer_close"> Cerrar panel lateral de navegación</string>
-    <string name="navigation_drawer_open">Abrir panel lateral de navegación</string>
-    <string name="HomeButton">Casa</string>
+    <string name="navigationDrawerClose"> Cerrar panel lateral de navegación</string>
+    <string name="navigationDrawerOpen">Abrir panel lateral de navegación</string>
     <string name="doublesActivityTitle">Actividad de dobles</string>
     <string name="doublesButton">Botón de dobles</string>
     <string name="dragsActivityTitle"> Actividad de arrastre</string>
@@ -16,4 +15,45 @@
     <string name="rollsButton">Buttón rollo</string>
     <string name="singlesActivityTitle">Actividad individual</string>
     <string name="singlesButton">Un solo botón</string>
+    <string name="action_sign_in">Ingresa o Registro</string>
+    <string name="action_sign_in_short">Registrarse</string>
+    <string name="appBarLayoutString">La barra de aplicaciones</string>
+    <string name="appBarLayoutContent">Esta es la barra de la aplicación</string>
+    <string name="app_nameDescription">título paradiddles</string>
+    <string name="doublesButtonDescription">Un botón para ir a los ejercicios de dobles</string>
+    <string name="dragsButtonDescription">Un botón para ir a los ejercicios de arrastrar </string>
+    <string name="drawerListItemsContent">Lista cajón de los elementos de menú </string>
+    <string name="error_field_required">este campo es requerido </string>
+    <string name="error_incorrect_password">Esta contraseña es incorrecta </string>
+    <string name="error_invalid_email">Esta dirección de correo electrónico no es válido </string>
+    <string name="error_invalid_password">Esta contraseña es demasiado corta </string>
+    <string name="flamsButtonDescription">Un botón para ir a los ejercicios de Mentira</string>
+    <string name="navBarContentDescription">El panel de navegación </string>
+    <string name="navDrawerAccount">Cuenta</string>
+    <string name="navDrawerEmail">lukewaugh12@gmail.com</string>
+    <string name="navDrawerHome">Casa</string>
+    <string name="navDrawerSettings">ajustes</string>
+    <string name="navDrawerTitle">Paradiddles</string>
+    <string name="navHeaderDrawerEmailContentDescription">Correo del desarrollador : lukewaugh12@gmail.com </string>
+    <string name="navHeaderDrawerTitleContentDescription">Nombre de la aplicación : Paradiddles </string>
+    <string name="navHeaderImageViewContentDescription">El logotipo de la App </string>
+    <string name="navigation_drawer_closeDescription">Cierre el cajón de navegación </string>
+    <string name="navigation_drawer_openDescription">Abrir panel de navegación </string>
+    <string name="permission_rationale">"Se necesitan permisos Contactos para proporcionar terminaciones de correo electrónico . " </string>
+    <string name="prompt_email">correo electrónico </string>
+    <string name="prompt_password">Contraseña (opcional ) </string>
+    <string name="rollsButtonDescription">Un botón para ir a los ejercicios del rollo </string>
+    <string name="settingsActivityTitle">ajustes Actividad </string>
+    <string name="singlesButtonDescription">Un botón para ir a los Ejercicios Individuales </string>
+    <string name="splashScreen">pantalla de carga </string>
+    <string name="splashScreenDescription">La pantalla de la aplicación de carga </string>
+    <string name="swipeLayoutDescription">Desliza el dedo a través de la siguiente imagen </string>
+    <string name="swipeLayoutImageView">Flagelo distribuir imágenes Ver </string>
+    <string name="swipeLayoutImageViewDescription">Desliza el dedo hacia la izquierda para la siguiente imagen , o hacia la derecha para el anterior </string>
+    <string name="title_activity_login">Registrarse</string>
+    <string name="triplesActivityTitle">Actividad trillizos </string>
+    <string name="tripletsButton">trillizos</string>
+    <string name="tripletsButtonDescription">Un botón para ir a los ejercicios de los tríos </string>
+    <string name="loginToMainContentDescription">le llevará a la página principal de la aplicación </string>
+    <string name="loginToMainText">No, gracias , me llevan a la aplicación! </string>
 </resources>

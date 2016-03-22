@@ -9,8 +9,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 class DoubleSwipeAdapter extends PagerAdapter {
-    private int [] doubles = {R.drawable.splash, R.drawable.triplets};
-    private Context context;
+    private final int [] doubles = {R.drawable.splash, R.drawable.triplets};
+    private final Context context;
 
 
     public DoubleSwipeAdapter(Context context) {

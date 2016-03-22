@@ -13,7 +13,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/mainDrawerContent"
-        android:contentDescription="@string/drawerFrameLayoutDescription"
         android:layout_below="@+id/paradiddlesLbl"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
@@ -58,6 +57,6 @@
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/menu_items"
-        />
+        android:contentDescription="@string/navBarContentDescription" />
 
 </android.support.v4.widget.DrawerLayout>

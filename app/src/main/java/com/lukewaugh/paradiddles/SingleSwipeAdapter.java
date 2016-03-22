@@ -9,10 +9,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 
-
 class SingleSwipeAdapter extends PagerAdapter {
-    private final int [] singles = {R.drawable.test, R.drawable.triplets};
-
+    private final int [] singles = { R.drawable.triplets};
 
     private final Context context;
 

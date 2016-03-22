@@ -1,17 +1,16 @@
 <resources>
-    <!-- STRINGS -->
+    <!-- =================== STRINGS =================== -->
     <!-- App Name -->
     <string name="app_name">Paradiddles</string>
     <!-- Splash Screen -->
     <string name="splashScreen">Loading Screen</string>
-    <!-- Buttons -->
+    <!-- =================== Buttons =================== -->
     <string name="singlesButton">Singles</string>
     <string name="tripletsButton">Triplets</string>
     <string name="doublesButton">Doubles</string>
     <string name="flamsButton">Flams</string>
     <string name="dragsButton">Drags</string>
     <string name="rollsButton">Rolls</string>
-    <string name="HomeButton">Home</string>
     <!-- Swipe Layout File Image View -->
     <string name="swipeLayoutImageView">Swipe Layout Image View</string>
     <!--Activity Titles -->
@@ -24,6 +23,8 @@
     <string name="triplesActivityTitle">Triplets Activity</string>
     <string name="mainActivityTitle">Paradiddles!</string>
     <string name="settingsActivityTitle">Settings Activity</string>
+
+    <!-- =================== NAVIGATION STRINGS ==================== -->
     <!-- Navigation Drawer Popups -->
     <string name="navigationDrawerOpen">Open navigation drawer</string>
     <string name="navigationDrawerClose">Close navigation drawer</string>
@@ -34,12 +35,19 @@
     <string name="navDrawerTitle">Paradiddles</string>
     <string name="navDrawerEmail">lukewaugh12@gmail.com</string>
 
+    <string name="appBarLayoutContent">This is the App bar</string>
+    <string name="navBarContentDescription">The Navigation Drawer</string>
+    <string name="navHeaderImageViewContentDescription">The App Logo</string>
+    <string name="navHeaderDrawerTitleContentDescription">App Name: Paradiddles</string>
+    <string name="navHeaderDrawerEmailContentDescription">Developer email: lukewaugh12@gmail.com</string>
 
-    <!-- CONTENT DESCRIPTIONS -->
+
+
+    <!-- =================== CONTENT DESCRIPTIONS =================== -->
     <string name="swipeLayoutDescription">Swipe across for the next image</string>
     <string name="app_nameDescription">Title Paradiddles</string>
     <!-- Splash Screen -->
-    <string name="splashScreenDescription">The loading Screen</string>
+    <string name="splashScreenDescription">The App loading Screen</string>
     <!-- Buttons -->
     <string name="singlesButtonDescription">A button to go to the Singles Exercises</string>
     <string name="tripletsButtonDescription">A button to go to the Triplets Exercises</string>
@@ -47,30 +55,18 @@
     <string name="flamsButtonDescription">A button to go to the Flams Exercises</string>
     <string name="dragsButtonDescription">A button to go to the Drags Exercises</string>
     <string name="rollsButtonDescription">A button to go to the Rolls Exercises</string>
-    <string name="HomeButtonDescription">A button to go to the Home screen </string>
+
     <!-- Swipe Layout File Image View -->
     <string name="swipeLayoutImageViewDescription">Swipe left For the next Image, or right for the previous</string>
 
-    <!--Activity Titles -->
-    <string name="singlesActivityTitleDescription">You are on the Singles page</string>
-    <string name="doublesActivityTitleDescription">You are on the Doubles page</string>
-    <string name="dragsActivityTitleDescription">You are on the Drags page</string>
-    <string name="flamsActivityTitleDescription">You are on the Flams page</string>
-    <string name="rollsActivityTitleDescription">You are on the Rolls page</string>
-    <string name="drawerActivityTitleDescription">Open the Navigation Drawer</string>
-    <string name="triplesActivityTitleDescription">You are on the Triplets page</string>
-    <string name="mainActivityTitleDescription">You are on the Home Screen </string>
+
     <!-- Navigation Drawer Popups -->
     <string name="navigation_drawer_openDescription">Open navigation drawer</string>
     <string name="navigation_drawer_closeDescription">Close navigation drawer</string>
-    <!--Navigation Drawer Items -->
-    <string-array name="navDrawerItemsDescription">
-        <item>Home</item>
-        <item>Account</item>
-        <item>Settings</item>
-    </string-array>
+
+
     <string name="drawerListItemsContent">Drawer List Menu Items</string>
-    <string name="drawerFrameLayoutDescription">TEST THIS HOMO</string>
+
     <string name="title_activity_login">Sign in</string>
 
     <!-- Strings related to login -->
@@ -82,9 +78,17 @@
     <string name="error_invalid_password">This password is too short</string>
     <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_field_required">This field is required</string>
-    <string name="permission_rationale">"Contacts permissions are needed for providing email
-        completions."
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."
     </string>
+    <string name="signed_in_fmt">Signed in as: %s</string>
+    <string name="signed_out">Signed out</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="title_text">Google Sign-In\nQuickstart</string>
+
+    <string name="appBarLayoutString">App Bar</string>
+    <string name="loginToMainText">No Thanks, take me to the App!</string>
+    <string name="loginToMainContentDescription">Take you to the main page of the app</string>
 
 
 </resources>

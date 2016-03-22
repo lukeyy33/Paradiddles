@@ -11,6 +11,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
 
+@SuppressWarnings("deprecation")
 public class SettingsActivity extends AppCompatActivity implements
         NavigationView.OnNavigationItemSelectedListener {
 

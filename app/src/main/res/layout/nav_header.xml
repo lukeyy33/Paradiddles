@@ -14,7 +14,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:src="@android:drawable/sym_def_app_icon" />
+        android:src="@android:drawable/sym_def_app_icon"
+        android:contentDescription="@string/navHeaderImageViewContentDescription" />
 
     <TextView
         android:layout_width="match_parent"
@@ -22,12 +23,14 @@
         android:paddingTop="@dimen/nav_header_vertical_spacing"
         android:textColor="@color/colorPrimary"
         android:text="@string/navDrawerTitle"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:contentDescription="@string/navHeaderDrawerTitleContentDescription" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/navDrawerEmail" />
+        android:text="@string/navDrawerEmail"
+        android:contentDescription="@string/navHeaderDrawerEmailContentDescription" />
 
 </LinearLayout>

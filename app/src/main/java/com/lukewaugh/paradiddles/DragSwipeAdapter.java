@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 class DragSwipeAdapter extends PagerAdapter {
-    private final int [] drags = {R.drawable.test, R.drawable.triplets};
+    private final int [] drags = {R.drawable.triplets};
     private final Context context;
 
 
