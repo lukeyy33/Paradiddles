@@ -103,9 +103,11 @@ public class MainActivity extends AppCompatActivity implements
         if (id == R.id.settings) {
             Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
             startActivity(intent);
+
         } else if (id == R.id.account) {
             Intent intent = new Intent(MainActivity.this, LoginActivity.class);
             startActivity(intent);
+
         } else if (id == R.id.home) {
             Intent intent = new Intent(MainActivity.this, MainActivity.class);
             startActivity(intent);

@@ -11,7 +11,7 @@ import android.widget.LinearLayout;
 
 
 class RollsSwipeAdapter extends PagerAdapter {
-    private final int [] rolls = {R.drawable.single_stroke_roll};
+    private final int [] rolls = {R.drawable.triplets};
     private final Context context;
 
     public RollsSwipeAdapter(Context context) {

@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_id": "paradiddles-1240",
+    "project_number": "30887356144",
+    "name": "Paradiddles"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:30887356144:android:e3b8f31beac16044",
+        "client_id": "android:com.lukewaugh.paradiddles",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.lukewaugh.paradiddles",
+          "certificate_hash": []
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "30887356144-9qgi0b54okpm2btn46nim5v0vhk9466u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lukewaugh.paradiddles",
+            "certificate_hash": "17EC5BDA906FE530A804B999C5F1F2EA0E7DA53C"
+          }
+        },
+        {
+          "client_id": "30887356144-7v6csrj5duglsb6h3as4v9lr4n65gtfi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 2
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}
