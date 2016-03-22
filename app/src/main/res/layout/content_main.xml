@@ -19,19 +19,6 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
 
-        <android.support.design.widget.AppBarLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:theme="@style/AppTheme">
-
-            <android.support.v7.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:background="@color/colorBackground"
-                />
-
-        </android.support.design.widget.AppBarLayout>
 
 
         <!-- ID btnDrags -->
@@ -116,12 +103,28 @@
             android:clickable="false"
             android:contentDescription="@string/app_nameDescription"
             android:layout_centerHorizontal="true" />
-    </RelativeLayout>
 
-    <include
-        layout="@layout/app_bar_main"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorBackground"
+                app:theme="@style/ToolBarStyle"
+                />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <include
+            layout="@layout/app_bar_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
 
     <android.support.design.widget.NavigationView
         android:id="@+id/nav_view"
@@ -129,10 +132,9 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
-        app:headerLayout="@layout/nav_header_main"
-        app:menu="@menu/menu_items" />
-
-
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/menu_items"
+        />
 </android.support.v4.widget.DrawerLayout>
 
 

@@ -23,6 +23,7 @@
     <string name="drawerActivityTitle">Drawer Activity</string>
     <string name="triplesActivityTitle">Triplets Activity</string>
     <string name="mainActivityTitle">Paradiddles!</string>
+    <string name="settingsActivityTitle">Settings Activity</string>
     <!-- Navigation Drawer Popups -->
     <string name="navigationDrawerOpen">Open navigation drawer</string>
     <string name="navigationDrawerClose">Close navigation drawer</string>
@@ -30,6 +31,8 @@
     <string name="navDrawerHome">Home</string>
     <string name="navDrawerAccount">Account</string>
     <string name="navDrawerSettings">Settings</string>
+    <string name="navDrawerTitle">Paradiddles</string>
+    <string name="navDrawerEmail">lukewaugh12@gmail.com</string>
 
 
     <!-- CONTENT DESCRIPTIONS -->

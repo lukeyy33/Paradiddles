@@ -33,6 +33,7 @@ class DoubleSwipeAdapter extends PagerAdapter {
         View itemView  = layoutInflater.inflate(R.layout.swipe_layout,container,false);
         ImageView imageView = (ImageView)itemView.findViewById(R.id.SwipeImageView);
 
+
         imageView.setImageResource(doubles[position]);
         container.addView(itemView);
 

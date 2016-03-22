@@ -3,13 +3,15 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/home"
-            android:title="@string/navDrawerHome" />
+            android:title="@string/navDrawerHome"
+            android:textColor="@color/colorPrimary"/>
         <item
             android:id="@+id/account"
-            android:title="@string/navDrawerAccount" />
+            android:title="@string/navDrawerAccount"
+            android:textColor="@color/colorPrimary"/>
         <item
             android:id="@+id/settings"
-            android:title="@string/navDrawerSettings" />
-        <!--android:icon="@drawable/ic_menu_camera"-->
+            android:title="@string/navDrawerSettings"
+            android:textColor="@color/colorPrimary"/>
     </group>
 </menu>

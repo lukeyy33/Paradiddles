@@ -25,46 +25,63 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <!-- Splash Activity -->
-        <activity android:name=".SplashScreen">
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <!-- Singles Activity -->
         <activity
             android:name=".SinglesActivity"
             android:label="@string/singlesActivityTitle"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
         <!-- Doubles Activity -->
         <activity
             android:name=".DoublesActivity"
             android:label="@string/doublesActivityTitle"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
         <!-- Triplets Activity -->
         <activity
             android:name=".TripletsActivity"
             android:label="@string/triplesActivityTitle"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
         <!-- Drags Activity -->
         <activity
             android:name=".DragsActivity"
             android:label="@string/dragsActivityTitle"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
         <!-- Rolls Activity -->
         <activity
             android:name=".RollsActivity"
             android:label="@string/rollsActivityTitle"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
         <!-- Flams Activity -->
         <activity
             android:name=".FlamsActivity"
             android:label="@string/flamsActivityTitle"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <!-- Login Activity -->
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <!-- Settings Activity -->
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/settingsActivityTitle"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
 
         <!--
             ATTENTION: This was auto-generated to add Google Play services to your project for
@@ -74,9 +91,5 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity
-            android:name=".LoginActivity"
-            android:label="@string/title_activity_login"></activity>
     </application>
-
 </manifest>

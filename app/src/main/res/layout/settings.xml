@@ -5,10 +5,9 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fitsSystemWindows="true"
+    tools:context=".SettingsActivity"
     android:id="@+id/drawerLayout"
-    tools:openDrawer="start"
-    tools:context=".FlamsActivity">
-
+    tools:openDrawer="start">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -19,23 +18,6 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
 
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/flamsActivityTitle"
-            android:id="@+id/flamsActivityTitle"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:contentDescription="@string/flamsActivityTitleDescription"/>
-
-        <android.support.v4.view.ViewPager
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/viewPager">
-        </android.support.v4.view.ViewPager>
 
         <android.support.design.widget.AppBarLayout
             android:layout_width="match_parent"
@@ -58,6 +40,7 @@
             android:layout_height="match_parent" />
 
     </RelativeLayout>
+
     <android.support.design.widget.NavigationView
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"

@@ -1,38 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    tools:context=".DoublesActivity"
+    android:id="@+id/drawerLayout"
+    tools:openDrawer="start">
 
-    <!-- Doubles Activity Title -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/doublesActivityTitle"
-        android:id="@+id/DoublesActivityTitle"
-        android:layout_gravity="center_horizontal"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:contentDescription="@string/doublesActivityTitleDescription"
-        android:paddingBottom="10dp"/>
-
-    <!-- Home Button -->
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/HomeButton"
-        android:id="@+id/btnHome"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:contentDescription="@string/HomeButtonDescription"/>
-
-    <!-- View Pager -->
-    <android.support.v4.view.ViewPager
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/viewPager">
-    </android.support.v4.view.ViewPager>
+        android:id="@+id/mainDrawerContent"
+        android:contentDescription="@string/drawerFrameLayoutDescription"
+        android:layout_below="@+id/paradiddlesLbl"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
-</RelativeLayout>
+
+
+        <!-- View Pager -->
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/viewPager">
+        </android.support.v4.view.ViewPager>
+        <!-- App Bar-->
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme">
+            <!-- Tool Bar -->
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorBackground"
+                app:theme="@style/ToolBarStyle"
+                />
+
+        </android.support.design.widget.AppBarLayout>
+        <!-- Include App Bar -->
+        <include
+            layout="@layout/app_bar_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </RelativeLayout>
+    <!-- Navigation View -->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/menu_items"
+        />
+
+</android.support.v4.widget.DrawerLayout>
