@@ -7,6 +7,7 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:fullBackupContent="true"
@@ -22,6 +23,7 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter tools:ignore="GoogleAppIndexingWarning">
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -31,6 +33,7 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -38,50 +41,53 @@
         <activity
             android:name=".SinglesActivity"
             android:label="@string/singlesActivityTitle"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <!-- Doubles Activity -->
         <activity
             android:name=".DoublesActivity"
             android:label="@string/doublesActivityTitle"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <!-- Triplets Activity -->
         <activity
             android:name=".TripletsActivity"
             android:label="@string/triplesActivityTitle"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <!-- Drags Activity -->
         <activity
             android:name=".DragsActivity"
             android:label="@string/dragsActivityTitle"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <!-- Rolls Activity -->
         <activity
             android:name=".RollsActivity"
             android:label="@string/rollsActivityTitle"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <!-- Flams Activity -->
         <activity
             android:name=".FlamsActivity"
             android:label="@string/flamsActivityTitle"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <!-- Login Activity -->
         <activity
-            android:name=".LoginActivity"
-            android:label="@string/title_activity_login"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
+            android:name=".authClasses.LoginActivity"
+            android:label="@string/loginActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <!-- Account Activity -->
+        <activity
+            android:name=".authClasses.AccountActivity"
+            android:label="Account Activity"
+            android:theme="@style/AppTheme"></activity>
+        <!-- Register Activity -->
+        <activity
+            android:name=".authClasses.RegisterActivity"
+            android:label="Register Activity"
+            android:theme="@style/AppTheme"></activity>
+
         <!-- Settings Activity -->
         <activity
             android:name=".SettingsActivity"
             android:label="@string/settingsActivityTitle"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
 
         <!--
             ATTENTION: This was auto-generated to add Google Play services to your project for
@@ -92,4 +98,5 @@
             android:value="@integer/google_play_services_version" />
 
     </application>
+
 </manifest>

@@ -1,4 +1,4 @@
-package com.lukewaugh.paradiddles;
+package com.lukewaugh.paradiddles.swipeAdapters;
 
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;
@@ -8,19 +8,21 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.lukewaugh.paradiddles.R;
 
-class SingleSwipeAdapter extends PagerAdapter {
-    private final int [] singles = { R.drawable.triplets};
 
+public class FlamsSwipeAdapter extends PagerAdapter {
+    private final int [] flams = {R.drawable.triplets};
     private final Context context;
 
-    public SingleSwipeAdapter(Context context) {
+
+    public FlamsSwipeAdapter(Context context) {
         this.context = context;
     }
 
     @Override
     public int getCount() {
-        return singles.length;
+        return flams.length;
     }
 
     @Override
@@ -34,7 +36,7 @@ class SingleSwipeAdapter extends PagerAdapter {
         View itemView  = layoutInflater.inflate(R.layout.swipe_layout,container,false);
         ImageView imageView = (ImageView)itemView.findViewById(R.id.SwipeImageView);
 
-        imageView.setImageResource(singles[position]);
+        imageView.setImageResource(flams[position]);
 
         container.addView(itemView);
 

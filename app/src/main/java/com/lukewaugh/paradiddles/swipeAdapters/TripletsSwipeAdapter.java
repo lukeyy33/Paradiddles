@@ -1,4 +1,4 @@
-package com.lukewaugh.paradiddles;
+package com.lukewaugh.paradiddles.swipeAdapters;
 
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;
@@ -8,18 +8,21 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-class DoubleSwipeAdapter extends PagerAdapter {
-    private final int [] doubles = {R.drawable.splash, R.drawable.triplets};
+import com.lukewaugh.paradiddles.R;
+
+
+public class TripletsSwipeAdapter extends PagerAdapter {
+    private final int [] triplets = {R.drawable.triplets};
+
     private final Context context;
 
-
-    public DoubleSwipeAdapter(Context context) {
+    public TripletsSwipeAdapter(Context context) {
         this.context = context;
     }
 
     @Override
     public int getCount() {
-        return doubles.length;
+        return triplets.length;
     }
 
     @Override
@@ -33,8 +36,8 @@ class DoubleSwipeAdapter extends PagerAdapter {
         View itemView  = layoutInflater.inflate(R.layout.swipe_layout,container,false);
         ImageView imageView = (ImageView)itemView.findViewById(R.id.SwipeImageView);
 
+        imageView.setImageResource(triplets[position]);
 
-        imageView.setImageResource(doubles[position]);
         container.addView(itemView);
 
         return itemView;

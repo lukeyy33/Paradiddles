@@ -11,6 +11,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
+import com.lukewaugh.paradiddles.authClasses.LoginActivity;
+import com.lukewaugh.paradiddles.swipeAdapters.DragSwipeAdapter;
+
 
 @SuppressWarnings("deprecation")
 public class DragsActivity extends AppCompatActivity implements

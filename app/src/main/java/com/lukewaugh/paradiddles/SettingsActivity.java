@@ -10,6 +10,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
+import com.lukewaugh.paradiddles.authClasses.LoginActivity;
+
 
 @SuppressWarnings("deprecation")
 public class SettingsActivity extends AppCompatActivity implements

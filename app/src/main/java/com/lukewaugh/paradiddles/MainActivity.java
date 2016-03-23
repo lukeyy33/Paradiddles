@@ -12,6 +12,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import com.lukewaugh.paradiddles.authClasses.AccountActivity;
+import com.lukewaugh.paradiddles.authClasses.LoginActivity;
+
 @SuppressWarnings("deprecation")
 public class MainActivity extends AppCompatActivity implements
         NavigationView.OnNavigationItemSelectedListener {
@@ -105,7 +108,7 @@ public class MainActivity extends AppCompatActivity implements
             startActivity(intent);
 
         } else if (id == R.id.account) {
-            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+            Intent intent = new Intent(MainActivity.this, AccountActivity.class);
             startActivity(intent);
 
         } else if (id == R.id.home) {

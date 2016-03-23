@@ -8,6 +8,9 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
+import com.lukewaugh.paradiddles.authClasses.LoginActivity;
+import com.lukewaugh.paradiddles.authClasses.RegisterActivity;
+
 public class SplashScreen extends AppCompatActivity {
 
     @Override
@@ -32,7 +35,7 @@ public class SplashScreen extends AppCompatActivity {
             public void onAnimationEnd(Animation animation) {
                 imageView.startAnimation(animation2);
                 finish();
-                Intent i = new Intent(SplashScreen.this.getBaseContext(),LoginActivity.class);
+                Intent i = new Intent(SplashScreen.this.getBaseContext(),RegisterActivity.class);
                 startActivity(i);
             }
 

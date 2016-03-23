@@ -1,4 +1,4 @@
-package com.lukewaugh.paradiddles;
+package com.lukewaugh.paradiddles.swipeAdapters;
 
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;
@@ -8,18 +8,20 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-class DragSwipeAdapter extends PagerAdapter {
-    private final int [] drags = {R.drawable.triplets};
+import com.lukewaugh.paradiddles.R;
+
+
+public class RollsSwipeAdapter extends PagerAdapter {
+    private final int [] rolls = {R.drawable.triplets};
     private final Context context;
 
-
-    public DragSwipeAdapter(Context context) {
+    public RollsSwipeAdapter(Context context) {
         this.context = context;
     }
 
     @Override
     public int getCount() {
-        return drags.length;
+        return rolls.length;
     }
 
     @Override
@@ -33,7 +35,7 @@ class DragSwipeAdapter extends PagerAdapter {
         View itemView  = layoutInflater.inflate(R.layout.swipe_layout,container,false);
         ImageView imageView = (ImageView)itemView.findViewById(R.id.SwipeImageView);
 
-        imageView.setImageResource(drags[position]);
+        imageView.setImageResource(rolls[position]);
 
         container.addView(itemView);
 
