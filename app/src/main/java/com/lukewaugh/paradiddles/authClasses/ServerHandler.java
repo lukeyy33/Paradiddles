@@ -6,9 +6,9 @@ import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
 
-import com.google.api.client.http.HttpResponse;
 
 import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
@@ -43,7 +43,7 @@ public class ServerHandler {
     Step 3: Instantiate the ServerHandler address to make
     the connection.
     */
-    public static final String SERVER_ADDRESS = "http://http://paradiddles.esy.es/";
+    public static final String SERVER_ADDRESS = "http://www.paradiddles.esy.es/";
     /*
     Step 4: Create the constructor to
     instantiate the progress dialog,
@@ -81,7 +81,7 @@ public class ServerHandler {
     */
     public void getUserData(User user, GetUser userCallback) {
         progressDialog.show();
-        new getUserDataAsyncTask(user, userCallback);
+        new getUserDataAsyncTask(user, userCallback).execute();
 
     }
     /*
@@ -185,7 +185,7 @@ public class ServerHandler {
 
             try {
                 post.setEntity(new UrlEncodedFormEntity(dataToSend));
-                org.apache.http.HttpResponse httpResponse = client.execute(post);
+                HttpResponse httpResponse = client.execute(post);
 
                 HttpEntity entity = httpResponse.getEntity();
                 String result = EntityUtils.toString(entity);
