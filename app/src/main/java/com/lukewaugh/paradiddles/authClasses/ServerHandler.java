@@ -4,6 +4,7 @@ package com.lukewaugh.paradiddles.authClasses;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
+import android.util.Log;
 
 import com.google.api.client.http.HttpResponse;
 
@@ -42,7 +43,7 @@ public class ServerHandler {
     Step 3: Instantiate the ServerHandler address to make
     the connection.
     */
-    public static final String SERVER_ADDRESS = "http://paradiddles.esy.es/";
+    public static final String SERVER_ADDRESS = "http://http://paradiddles.esy.es/";
     /*
     Step 4: Create the constructor to
     instantiate the progress dialog,
@@ -109,16 +110,16 @@ public class ServerHandler {
         */
         @Override
         protected Void doInBackground(Void... params) {
+            //Todo Find out what Void... params is
             ArrayList<NameValuePair> dataToSend = new ArrayList<>();
 
             dataToSend.add(new BasicNameValuePair("username", user.username));
-            dataToSend.add(new BasicNameValuePair("email", user.email));
             dataToSend.add(new BasicNameValuePair("password", user.password));
-            dataToSend.add(new BasicNameValuePair("age", user.age + ""));
+            dataToSend.add(new BasicNameValuePair("email", user.email));
 
-            HttpParams httpRequestParams = new BasicHttpParams();
-            HttpConnectionParams.setConnectionTimeout(httpRequestParams, CONNECTION_TIMEOUT);
-            HttpConnectionParams.setSoTimeout(httpRequestParams, CONNECTION_TIMEOUT);
+
+            HttpParams httpRequestParams = getHttpRequestParams();
+
 
             HttpClient client = new DefaultHttpClient(httpRequestParams);
             HttpPost   post = new HttpPost(SERVER_ADDRESS + "Register.php");
@@ -132,6 +133,14 @@ public class ServerHandler {
 
             return null;
         }
+        private HttpParams getHttpRequestParams() {
+            HttpParams httpRequestParams = new BasicHttpParams();
+            HttpConnectionParams.setConnectionTimeout(httpRequestParams,
+                    CONNECTION_TIMEOUT);
+            HttpConnectionParams.setSoTimeout(httpRequestParams,
+                    CONNECTION_TIMEOUT);
+            return httpRequestParams;
+        }
         /*
         Step 9: When the AsyncTask has finished
         Override a method to dismiss the process
@@ -139,13 +148,16 @@ public class ServerHandler {
         has finished.
         */
         @Override
-        protected void onPostExecute(Void aVoid) {
+        protected void onPostExecute(Void result) {
+            super.onPostExecute(result);
             progressDialog.dismiss();
             userCallback.processDone(null);
-            super.onPostExecute(aVoid);
         }
     }
-
+    /*
+    Class for logging in the user in the background
+    //Todo
+    */
     public class getUserDataAsyncTask extends AsyncTask<Void,Void,User> {
         User user;
         GetUser userCallback;
@@ -179,14 +191,12 @@ public class ServerHandler {
                 String result = EntityUtils.toString(entity);
                 JSONObject jsonObject = new JSONObject(result);
 
-                if (jsonObject.length() == 0) {
-                    user = null;
-                } else {
+                if (jsonObject.length() != 0) {
+                    Log.v("happened", "2");
                     String email = jsonObject.getString("email");
-                    int age = jsonObject.getInt("age");
-
-                    returnedUser = new User(user.username, email, user.password, age);
+                    returnedUser = new User(user.username, user.password, email);
                 }
+
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -197,11 +207,10 @@ public class ServerHandler {
 
         @Override
         protected void onPostExecute(User returnedUser) {
+            super.onPostExecute(returnedUser);
             progressDialog.dismiss();
             userCallback.processDone(returnedUser);
-            super.onPostExecute(returnedUser);
         }
-
 
     }
 }

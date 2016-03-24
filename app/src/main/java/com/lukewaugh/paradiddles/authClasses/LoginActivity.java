@@ -11,7 +11,6 @@ import android.widget.Button;
 import android.widget.EditText;
 
 
-import com.lukewaugh.paradiddles.MainActivity;
 import com.lukewaugh.paradiddles.R;
 
 
@@ -33,9 +32,7 @@ public class LoginActivity extends AppCompatActivity  implements
         password = (EditText) findViewById(R.id.loginPassword);
         buttonLogin = (Button) findViewById(R.id.loginBtn);
 
-
         buttonLogin.setOnClickListener(this);
-
 
         userLocal = new UserLocal(this);
     }
@@ -72,10 +69,7 @@ public class LoginActivity extends AppCompatActivity  implements
     private void displayUserDetails() {
         User user = userLocal.getLoggedInUser();
         accountActivity.usernameText.setText(user.username);
-        //Can't display int directly, have to pass string too
-        accountActivity.ageText.setText(user.age + "");
         accountActivity.emailText.setText(user.email);
-
     }
 
     //Will return true if user is logged int

@@ -1,13 +1,13 @@
 # Paradiddles
 Luke Waugh, Software Engineer Final Year Student
 
-Research and investigation into mobile programming development applications and implementation of a prototype smartphone 
+Research and investigation into mobile programming development applications and implementation of a prototype Smart phone 
 application to enable drummers to improve their skills/abilities.
 
-I am creating an android smartphone application to air drummers with their drum rudiments known as ‘Paradiddles’.
+I am creating an android Smart phone application to air drummers with their drum rudiments known as ‘Paradiddles’.
 It will consist of different degrees of difficulty to work towards, increasing a drummer’s ability to keep in time and speed whilst performing.
 I have played the drums for over 10 years (which is why I chose to make this app), and there are
-technical rudiments called ‘Paradiddles’. For instance a paradiddle can consist of patterns like so: (R-L-R-R L-R-L-L).
+technical rudiments called ‘Paradiddles’. For instance a Paradiddle can consist of patterns like so: (R-L-R-R L-R-L-L).
 
 Project Aims
 My main project aims are:

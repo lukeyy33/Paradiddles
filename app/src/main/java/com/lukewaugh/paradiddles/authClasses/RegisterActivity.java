@@ -17,7 +17,7 @@ public class RegisterActivity extends AppCompatActivity  implements
 
     Button buttonRegister;
     EditText textEmail, textPassword,
-            textAge, textUsername;
+             textUsername;
     TextView goToMain;
 
     @Override
@@ -32,7 +32,6 @@ public class RegisterActivity extends AppCompatActivity  implements
 
         textEmail = (EditText) findViewById(R.id.emailEditText);
         textPassword = (EditText) findViewById(R.id.loginPassword);
-        textAge = (EditText) findViewById(R.id.ageEditText);
         textUsername = (EditText) findViewById(R.id.registerUsername);
 
 
@@ -46,10 +45,10 @@ public class RegisterActivity extends AppCompatActivity  implements
                 String name = textUsername.getText().toString();
                 String password = textPassword.getText().toString();
                 String email = textEmail.getText().toString();
-                int age = Integer.parseInt(textAge.getText().toString());
 
 
-                User user = new User(name, email, password, age);
+
+                User user = new User(name, password, email);
                 registerUser(user);
 
                 break;

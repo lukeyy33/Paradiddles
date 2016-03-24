@@ -46,9 +46,8 @@ public class UserLocal {
     public void storeUserData(User user) {
         SharedPreferences.Editor editor = userDB.edit();
         editor.putString("username", user.username);
-        editor.putString("email", user.email);
         editor.putString("password", user.password);
-        editor.putInt("age", user.age);
+        editor.putString("email", user.email);
 
         editor.apply();
     }
@@ -69,11 +68,7 @@ public class UserLocal {
     */
     public boolean getUserLoggedIn() {
         //if the user is logged in
-        if (userDB.getBoolean("loggedIn", false)) {
-            return true;
-        } else {
-            return false;
-        }
+        return userDB.getBoolean("loggedIn", false);
     }
     /*
     4.4: Create a method to clear the user data
@@ -95,9 +90,8 @@ public class UserLocal {
         String username = userDB.getString("username", "");
         String email = userDB.getString("email", "");
         String password = userDB.getString("password", "");
-        int age = userDB.getInt("age", -1);
 
-        User user = new User(username, email, password, age);
+        User user = new User(username, password, email);
 
         return user;
 

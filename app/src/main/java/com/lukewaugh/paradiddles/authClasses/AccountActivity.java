@@ -18,7 +18,7 @@ public class AccountActivity extends AppCompatActivity implements View.OnClickLi
 
     Button logoutButton, loginButton;
     UserLocal userLocal;
-    TextView usernameText, emailText, ageText;
+    TextView usernameText, emailText;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -33,7 +33,7 @@ public class AccountActivity extends AppCompatActivity implements View.OnClickLi
 
         usernameText = (TextView) findViewById(R.id.accManagementUsername);
         emailText = (TextView) findViewById(R.id.accManagementEmail);
-        ageText = (TextView) findViewById(R.id.accManagementAge);
+
         userLocal = new UserLocal(this);
     }
 
