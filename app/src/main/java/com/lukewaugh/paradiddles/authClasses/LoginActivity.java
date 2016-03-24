@@ -21,7 +21,6 @@ public class LoginActivity extends AppCompatActivity  implements
     EditText username, password;
 
     UserLocal userLocal;
-    AccountActivity accountActivity = new AccountActivity();
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -55,27 +54,27 @@ public class LoginActivity extends AppCompatActivity  implements
     }
 
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-        if (authUser()){
-            displayUserDetails();
-        } else {
-            //startActivity(new Intent(LoginActivity.this, MainActivity.class));
-        }
-
-    }
-
-    private void displayUserDetails() {
-        User user = userLocal.getLoggedInUser();
-        accountActivity.usernameText.setText(user.username);
-        accountActivity.emailText.setText(user.email);
-    }
-
-    //Will return true if user is logged int
-    private boolean authUser() {
-        return userLocal.getUserLoggedIn();
-    }
+//    @Override
+//    protected void onStart() {
+//        super.onStart();
+//        if (authUser()){
+//            displayUserDetails();
+//        } else {
+//            //startActivity(new Intent(LoginActivity.this, MainActivity.class));
+//        }
+//
+//    }
+//
+//    private void displayUserDetails() {
+//        User user = userLocal.getLoggedInUser();
+//        accountActivity.usernameText.setText(user.username);
+//        accountActivity.emailText.setText(user.email);
+//    }
+//
+//    //Will return true if user is logged int
+//    private boolean authUser() {
+//        return userLocal.getUserLoggedIn();
+//    }
 
     private void authenticateDetails(User user) {
         ServerHandler serverRequests = new ServerHandler(this);
