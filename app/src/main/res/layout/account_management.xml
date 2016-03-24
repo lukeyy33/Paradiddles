@@ -27,21 +27,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="ggg"
+            android:text="user"
             android:id="@+id/accManagementUsername"
-            android:layout_marginTop="112dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="ggg"
-            android:id="@+id/accManagementEmail"
-            android:layout_marginTop="70dp"
-            android:layout_below="@+id/accManagementUsername"
-            android:layout_centerHorizontal="true" />
+            android:layout_marginTop="73dp"
+            android:layout_below="@+id/userText"
+            android:layout_centerInParent="true"
+             />
 
         <TextView
             android:layout_width="wrap_content"
@@ -49,10 +40,20 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Username: "
             android:id="@+id/userText"
-            android:layout_alignTop="@+id/accManagementUsername"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:textColor="@color/colorPrimary" />
+            android:textColor="@color/colorPrimary"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/logoutBtn"
+            android:layout_alignEnd="@+id/logoutBtn"
+            android:layout_marginTop="134dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Email"
+            android:id="@+id/accManagementEmail"
+            android:layout_below="@+id/emailText"
+            android:layout_centerHorizontal="true" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -60,11 +61,9 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Registered email: "
             android:id="@+id/emailText"
-            android:layout_alignTop="@+id/accManagementEmail"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:textColor="@color/colorPrimary" />
-
+            android:textColor="@color/colorPrimary"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
         <android.support.design.widget.AppBarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -78,13 +77,14 @@
                 android:background="@color/colorBackground"
                 app:theme="@style/ToolBarStyle"
                 />
-
         </android.support.design.widget.AppBarLayout>
+
 
         <include
             layout="@layout/app_bar_main"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
+
 
     </RelativeLayout>
     <android.support.design.widget.NavigationView

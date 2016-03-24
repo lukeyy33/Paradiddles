@@ -36,7 +36,9 @@
         android:singleLine="true"
         android:textColor="@color/colorPrimary"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="68dp" />
 
     <EditText
         android:id="@+id/loginPassword"
@@ -59,10 +61,23 @@
         android:text="@string/signIn"
         android:textStyle="bold"
         android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/loginPassword"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="54dp"
-        android:layout_below="@+id/loginPassword" />
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Sign in."
+        android:id="@+id/signInText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignRight="@+id/email"
+        android:layout_alignEnd="@+id/email"
+        android:textSize="30sp" />
 
 
 </RelativeLayout>

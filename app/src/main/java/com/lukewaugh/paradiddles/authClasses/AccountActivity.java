@@ -25,6 +25,7 @@ public class AccountActivity extends AppCompatActivity implements
 
     UserLocal userLocal;
     TextView usernameText, emailText;
+    Button logout;
 
 
     @Override
@@ -46,10 +47,11 @@ public class AccountActivity extends AppCompatActivity implements
         navigationView.setNavigationItemSelectedListener(this);
 
 
-
-
         usernameText = (TextView) findViewById(R.id.accManagementUsername);
         emailText = (TextView) findViewById(R.id.accManagementEmail);
+
+        logout = (Button) findViewById(R.id.logoutBtn);
+
 
         userLocal = new UserLocal(this);
     }
@@ -64,6 +66,7 @@ public class AccountActivity extends AppCompatActivity implements
 
                 startActivity(new Intent(this, MainActivity.class));
                 break;
+            //Todo Add change password/email options
 
         }
     }
@@ -79,7 +82,7 @@ public class AccountActivity extends AppCompatActivity implements
         if (authUser()){
             displayUserDetails();
         } else {
-            //startActivity(new Intent(LoginActivity.this, MainActivity.class));
+            startActivity(new Intent(AccountActivity.this, RegisterActivity.class));
         }
 
     }
