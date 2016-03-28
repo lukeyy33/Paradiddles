@@ -9,16 +9,18 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+
 import com.lukewaugh.paradiddles.MainActivity;
 import com.lukewaugh.paradiddles.R;
 
 public class RegisterActivity extends AppCompatActivity  implements
         View.OnClickListener {
 
-    Button buttonRegister;
-    EditText textEmail, textPassword,
-             textUsername;
-    TextView goToMain;
+    private Button buttonRegister;
+    private EditText textEmail;
+    private EditText textPassword;
+    private EditText textUsername;
+    private TextView goToMain;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -27,6 +29,7 @@ public class RegisterActivity extends AppCompatActivity  implements
 
         buttonRegister = (Button) findViewById(R.id.registerBtn);
         goToMain = (TextView) findViewById(R.id.continueWithNoAccount);
+        assert goToMain != null;
         goToMain.setOnClickListener(this);
 
 
@@ -45,8 +48,6 @@ public class RegisterActivity extends AppCompatActivity  implements
                 String name = textUsername.getText().toString();
                 String password = textPassword.getText().toString();
                 String email = textEmail.getText().toString();
-
-
 
                 User user = new User(name, password, email);
                 registerUser(user);

@@ -19,6 +19,7 @@ import com.lukewaugh.paradiddles.R;
 import com.lukewaugh.paradiddles.SettingsActivity;
 
 
+@SuppressWarnings("ALL")
 public class AccountActivity extends AppCompatActivity implements
         View.OnClickListener, NavigationView.OnNavigationItemSelectedListener {
 
@@ -28,6 +29,7 @@ public class AccountActivity extends AppCompatActivity implements
     Button logout;
 
 
+    @SuppressWarnings("deprecation")
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +46,7 @@ public class AccountActivity extends AppCompatActivity implements
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        assert navigationView != null;
         navigationView.setNavigationItemSelectedListener(this);
 
 

@@ -32,28 +32,36 @@ public class MainActivity extends AppCompatActivity implements
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawerLayout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, myToolbar, R.string.navigationDrawerOpen, R.string.navigationDrawerClose);
+        assert drawer != null;
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        assert navigationView != null;
         navigationView.setNavigationItemSelectedListener(this);
 
         Button singlesBtn  = (Button) findViewById(R.id.btnSingles);
+        assert singlesBtn != null;
         singlesBtn.setOnClickListener(this);
 
         Button doublesBtn  = (Button) findViewById(R.id.btnDoubles);
+        assert doublesBtn != null;
         doublesBtn.setOnClickListener(this);
 
         Button tripletsBtn = (Button) findViewById(R.id.btnTriplets);
+        assert tripletsBtn != null;
         tripletsBtn.setOnClickListener(this);
 
         Button flamsBtn = (Button) findViewById(R.id.btnFlams);
+        assert flamsBtn != null;
         flamsBtn.setOnClickListener(this);
 
         Button dragsBtn = (Button) findViewById(R.id.btnDrags);
+        assert dragsBtn != null;
         dragsBtn.setOnClickListener(this);
 
         Button rollsBtn = (Button) findViewById(R.id.btnRolls);
+        assert rollsBtn != null;
         rollsBtn.setOnClickListener(this);
 
 
@@ -61,6 +69,7 @@ public class MainActivity extends AppCompatActivity implements
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawerLayout);
+        assert drawer != null;
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {

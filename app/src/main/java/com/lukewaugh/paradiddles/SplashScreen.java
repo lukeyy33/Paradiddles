@@ -8,7 +8,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
-import com.lukewaugh.paradiddles.authClasses.LoginActivity;
+
 import com.lukewaugh.paradiddles.authClasses.RegisterActivity;
 
 public class SplashScreen extends AppCompatActivity {
@@ -24,6 +24,7 @@ public class SplashScreen extends AppCompatActivity {
         @SuppressLint("PrivateResource")
         final Animation animation2 = AnimationUtils.loadAnimation(getBaseContext(), R.anim.abc_fade_out);
 
+        assert imageView != null;
         imageView.startAnimation(animation);
         animation.setAnimationListener(new Animation.AnimationListener() {
             @Override

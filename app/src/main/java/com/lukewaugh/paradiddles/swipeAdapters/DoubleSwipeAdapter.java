@@ -11,7 +11,9 @@ import android.widget.LinearLayout;
 import com.lukewaugh.paradiddles.R;
 
 public class DoubleSwipeAdapter extends PagerAdapter {
-    private final int [] doubles = {R.drawable.splash, R.drawable.triplets};
+    private final int [] doubles =
+            {R.drawable.double_paradiddle, R.drawable.double_paradiddle1, R.drawable.double_paradiddle2,
+             R.drawable.double_paradiddle3 };
     private final Context context;
 
 

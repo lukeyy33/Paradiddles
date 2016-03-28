@@ -12,7 +12,7 @@ import com.lukewaugh.paradiddles.R;
 
 
 public class SingleSwipeAdapter extends PagerAdapter {
-    private final int [] singles = { R.drawable.triplets};
+    private final int [] singles = { R.drawable.single_stroke_roll};
 
     private final Context context;
 

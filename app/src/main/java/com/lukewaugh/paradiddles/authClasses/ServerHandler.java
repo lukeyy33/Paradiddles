@@ -7,6 +7,8 @@ import android.os.AsyncTask;
 import android.util.Log;
 
 
+
+
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
@@ -19,13 +21,17 @@ import org.apache.http.params.BasicHttpParams;
 import org.apache.http.params.HttpConnectionParams;
 import org.apache.http.params.HttpParams;
 import org.apache.http.util.EntityUtils;
-import org.json.JSONObject;
 
+import org.json.JSONObject;
 import java.util.ArrayList;
+
+
+
 
 /*
 A Class for handling ServerHandler requests
 */
+@SuppressWarnings("ALL")
 public class ServerHandler {
     /*
     Step 1: Create a loading dialog
@@ -90,7 +96,7 @@ public class ServerHandler {
     the background and marks the types used by
     the AsyncTask as unused.
     */
-    public class StoreUserDataAsyncTask extends AsyncTask<Void,Void,Void>{
+public class StoreUserDataAsyncTask extends AsyncTask<Void,Void,Void>{
         User user;
         GetUser userCallback;
         /*
@@ -171,6 +177,7 @@ public class ServerHandler {
         protected User doInBackground(Void... params) {
             ArrayList<NameValuePair> dataToSend = new ArrayList<>();
 
+
             dataToSend.add(new BasicNameValuePair("username", user.username));
             dataToSend.add(new BasicNameValuePair("password", user.password));
 
@@ -182,14 +189,15 @@ public class ServerHandler {
             HttpPost   post = new HttpPost(SERVER_ADDRESS + "FetchUserData.php");
 
             User returnedUser = null;
-
             try {
                 post.setEntity(new UrlEncodedFormEntity(dataToSend));
                 HttpResponse httpResponse = client.execute(post);
 
                 HttpEntity entity = httpResponse.getEntity();
                 String result = EntityUtils.toString(entity);
+
                 JSONObject jsonObject = new JSONObject(result);
+
 
                 if (jsonObject.length() != 0) {
                     Log.v("happened", "2");

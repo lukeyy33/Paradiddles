@@ -30,22 +30,26 @@ public class SinglesActivity extends AppCompatActivity implements
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawerLayout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, myToolbar, R.string.navigationDrawerOpen, R.string.navigationDrawerClose);
+        assert drawer != null;
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        assert navigationView != null;
         navigationView.setNavigationItemSelectedListener(this);
 
 
 
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewPager);
         SingleSwipeAdapter singleSwipeAdapter = new SingleSwipeAdapter(this);
+        assert viewPager != null;
         viewPager.setAdapter(singleSwipeAdapter);
 
     }
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawerLayout);
+        assert drawer != null;
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
@@ -70,6 +74,7 @@ public class SinglesActivity extends AppCompatActivity implements
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawerLayout);
+        assert drawer != null;
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }

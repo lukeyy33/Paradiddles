@@ -1,5 +1,8 @@
 package com.lukewaugh.paradiddles.authClasses;
 
+import com.lukewaugh.paradiddles.R;
+
+
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,19 +11,26 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+
 import android.widget.EditText;
 
 
-import com.lukewaugh.paradiddles.R;
 
 
 public class LoginActivity extends AppCompatActivity  implements
-        View.OnClickListener {
+                                            View.OnClickListener {
 
-    Button buttonLogin;
-    EditText username, password;
+    private Button buttonLogin;
+    private EditText username;
+    private EditText password;
 
-    UserLocal userLocal;
+    private UserLocal userLocal;
+
+
+
+
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -47,34 +57,8 @@ public class LoginActivity extends AppCompatActivity  implements
 
                 authenticateDetails(user);
                 break;
-
-
         }
-
     }
-
-
-//    @Override
-//    protected void onStart() {
-//        super.onStart();
-//        if (authUser()){
-//            displayUserDetails();
-//        } else {
-//            //startActivity(new Intent(LoginActivity.this, MainActivity.class));
-//        }
-//
-//    }
-//
-//    private void displayUserDetails() {
-//        User user = userLocal.getLoggedInUser();
-//        accountActivity.usernameText.setText(user.username);
-//        accountActivity.emailText.setText(user.email);
-//    }
-//
-//    //Will return true if user is logged int
-//    private boolean authUser() {
-//        return userLocal.getUserLoggedIn();
-//    }
 
     private void authenticateDetails(User user) {
         ServerHandler serverRequests = new ServerHandler(this);
@@ -88,12 +72,11 @@ public class LoginActivity extends AppCompatActivity  implements
                 }
             }
         });
-
     }
 
     private void errorMessage() {
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(LoginActivity.this);
-        dialogBuilder.setMessage("Incorrect User Details.");
+        dialogBuilder.setMessage("Incorrect Username or Password.");
         dialogBuilder.setPositiveButton("Ok.", null);
         dialogBuilder.show();
     }
@@ -102,7 +85,6 @@ public class LoginActivity extends AppCompatActivity  implements
         userLocal.setLoggedInUser(true);
 
         startActivity(new Intent(this, AccountActivity.class));
-
     }
 }
 

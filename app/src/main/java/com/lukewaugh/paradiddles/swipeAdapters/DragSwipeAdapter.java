@@ -11,7 +11,9 @@ import android.widget.LinearLayout;
 import com.lukewaugh.paradiddles.R;
 
 public class DragSwipeAdapter extends PagerAdapter {
-    private final int [] drags = {R.drawable.triplets};
+    private final int [] drags =
+            {R.drawable.drag_paradiddle, R.drawable.drag_paradiddle1,
+             R.drawable.drag_paradiddle2, R.drawable.drag_paradiddle3};
     private final Context context;
 
 

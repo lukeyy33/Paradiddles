@@ -3,24 +3,27 @@ package com.lukewaugh.paradiddles.authClasses;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+
+
+
 /*
 Java Class for manipulating user details to
 a file stored on the phone:
 'SharedPreferences'.
 */
-public class UserLocal {
+class UserLocal {
     /*
     Step 1:
     Create the variable of the file where details
     will be stored.
     */
-    public static final String SP_NAME = "userDetails";
+    private static final String SP_NAME = "userDetails";
     /*
     Step 2:
     Instantiate the SharedPreferences Class
     for accessing, modifying and adding data on the users phone.
     */
-    public SharedPreferences userDB;
+    private final SharedPreferences userDB;
     /*
     Step 3:
     Get the context from the Activity which will be using this
@@ -28,7 +31,6 @@ public class UserLocal {
     */
     public UserLocal(Context context) {
         userDB = context.getSharedPreferences(SP_NAME, 0);
-
     }
     /*
     Step 4:
@@ -88,12 +90,10 @@ public class UserLocal {
     */
     public User getLoggedInUser() {
         String username = userDB.getString("username", "");
-        String email = userDB.getString("email", "");
+        String email    = userDB.getString("email", "");
         String password = userDB.getString("password", "");
 
-        User user = new User(username, password, email);
-
-        return user;
+        return new User(username, password, email);
 
     }
 }

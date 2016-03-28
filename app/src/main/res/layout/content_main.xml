@@ -63,7 +63,7 @@
             android:layout_toRightOf="@+id/paradiddlesLbl"
             android:layout_toEndOf="@+id/paradiddlesLbl"
             android:textColor="@color/colorPrimary"
-            android:contentDescription="@string/tripletsButton"/>
+            android:contentDescription="@string/tripletsButtonDescription"/>
 
         <!-- ID btnDoubles -->
         <Button

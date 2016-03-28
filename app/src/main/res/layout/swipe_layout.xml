@@ -11,6 +11,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/SwipeImageView"
         android:scaleType="fitCenter"
-        android:contentDescription="@string/swipeLayoutDescription" />
+        android:contentDescription="@string/swipeLayoutImageViewDescription" />
 
 </LinearLayout>
