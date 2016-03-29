@@ -20,7 +20,6 @@ public class RegisterActivity extends AppCompatActivity  implements
     private EditText textEmail;
     private EditText textPassword;
     private EditText textUsername;
-    private TextView goToMain;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -28,7 +27,7 @@ public class RegisterActivity extends AppCompatActivity  implements
         setContentView(R.layout.register);
 
         buttonRegister = (Button) findViewById(R.id.registerBtn);
-        goToMain = (TextView) findViewById(R.id.continueWithNoAccount);
+        TextView goToMain = (TextView) findViewById(R.id.continueWithNoAccount);
         assert goToMain != null;
         goToMain.setOnClickListener(this);
 
